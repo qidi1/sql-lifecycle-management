@@ -905,7 +905,7 @@ delete from execution_log          where                (                       
 
     def test_position_func(p):
         test_sqls = [
-            "SELECT * FROM t WHERE a=POSITION('tacode' in 'tacodea')",
+            "DELETE FROM t WHERE a=1",
         ]
         for sql in test_sqls:
             result = mysql_parser.parse(sql, lexer=mysql_lexer, debug=True)
